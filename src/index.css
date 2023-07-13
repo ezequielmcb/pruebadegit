@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -12,6 +18,8 @@ body{
     width: 70rem;
 }
 
+/* INICIO NAV */
+
 .nav{
     background-color: #fff;
     display: flex;
@@ -20,21 +28,51 @@ body{
 } 
 
 .seach{
-    border-radius: 9px;
-    border:1px solid #222;
-    padding: 0 15px;
-    height: 2.8rem;
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 0 15px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .seach > input{
-    height: 41px;
+    height: 45px;
     width: 5.5rem;
+    border: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .seach > span{
     color:#EB5757;
     font-weight: 450;
 }
+
+/* FINAL NAV */
+
+/* INICIO CARD */
+/* .contenedorcards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+} */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    width: 395px;
+}
+
+.card > img{
+    height: 269px;
+    width: 395px;
+    border-radius: 15px;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* FINAL CARD */
